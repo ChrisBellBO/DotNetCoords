@@ -175,16 +175,12 @@ namespace DotNetCoords
         double height, Datum.Datum datum)
     {
 
-      if (latitudeDegrees < 0.0 || latitudeDegrees > 90.0
-          || latitudeMinutes < 0.0 || latitudeMinutes >= 60.0
-          || latitudeSeconds < 0.0 || latitudeSeconds >= 60.0)
+      if (!IsValidLatitude(latitudeDegrees, latitudeMinutes, latitudeSeconds))
       {
         throw new ArgumentException("Invalid latitude");
       }
 
-      if (longitudeDegrees < 0.0 || longitudeDegrees > 180.0
-          || longitudeMinutes < 0.0 || longitudeMinutes >= 60.0
-          || longitudeSeconds < 0.0 || longitudeSeconds >= 60.0)
+      if (!IsValidLongitude(longitudeDegrees, longitudeMinutes, longitudeSeconds))
       {
         throw new ArgumentException("Invalid longitude");
       }
@@ -241,7 +237,27 @@ namespace DotNetCoords
     }
 
     /// <summary>
-    /// Determines whether the specified longitude is valid longitude.
+    /// Determines whether the specified latitude is valid.
+    /// </summary>
+    /// <param name="latitudeDegrees">The degrees part of the latitude.</param>
+    /// <param name="latitudeMinutes">The minutes part of the latitude.</param>
+    /// <param name="latitudeSeconds">The seconds part of the latitude.</param>
+    /// <returns>
+    ///   <c>true</c> if the latitude is valid; otherwise, <c>false</c>.
+    /// </returns>
+    public static bool IsValidLatitude(int latitudeDegrees, int latitudeMinutes, double latitudeSeconds)
+    {
+      if (latitudeDegrees < 0.0 || latitudeDegrees > 90.0
+          || latitudeMinutes < 0.0 || latitudeMinutes >= 60.0
+          || latitudeSeconds < 0.0 || latitudeSeconds >= 60.0)
+      {
+        return false;
+      }
+      return true;
+    }
+
+    /// <summary>
+    /// Determines whether the specified longitude is valid.
     /// </summary>
     /// <param name="longitude">The longitude.</param>
     /// <returns>
@@ -250,6 +266,27 @@ namespace DotNetCoords
     public static bool IsValidLongitude(double longitude)
     {
       return (longitude >= -180.0 && longitude <= 180.0);
+    }
+
+    /// <summary>
+    /// Determines whether the specified longitude is valid.
+    /// </summary>
+    /// <param name="longitudeDegrees">The degrees part of the longitude.</param>
+    /// <param name="longitudeMinutes">The minutes part of the longitude.</param>
+    /// <param name="longitudeSeconds">The seconds part of the longitude.</param>
+    /// <returns>
+    ///   <c>true</c> if the longitude is valid; otherwise, <c>false</c>.
+    /// </returns>
+    public static bool IsValidLongitude(int longitudeDegrees,
+        int longitudeMinutes, double longitudeSeconds)
+    {
+      if (longitudeDegrees < 0.0 || longitudeDegrees > 180.0
+          || longitudeMinutes < 0.0 || longitudeMinutes >= 60.0
+          || longitudeSeconds < 0.0 || longitudeSeconds >= 60.0)
+      {
+        return false;
+      }
+      return true;
     }
 
     /// <summary>
