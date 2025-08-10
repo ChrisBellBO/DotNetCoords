@@ -31,9 +31,8 @@
     <IncludeFavorites>False</IncludeFavorites>
     <BinaryTOC>True</BinaryTOC>
     <DocumentationSources>
-      <DocumentationSource sourceFile="bin\Debug\DotNetCoords.dll" xmlns="" />
-      <DocumentationSource sourceFile="bin\Debug\DotNetCoords.xml" xmlns="" />
-    </DocumentationSources>
+      <DocumentationSource sourceFile="bin\Debug\netstandard2.0\DotNetCoords.dll" />
+<DocumentationSource sourceFile="bin\Debug\netstandard2.0\DotNetCoords.xml" /></DocumentationSources>
     <SyntaxFilters>Standard</SyntaxFilters>
     <SdkLinkTarget>Blank</SdkLinkTarget>
     <RootNamespaceContainer>True</RootNamespaceContainer>

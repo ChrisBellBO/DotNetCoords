@@ -157,6 +157,7 @@
   <HelpKINode Title="DotNetCoords.Ellipsoid.WGS66Ellipsoid class" Url="html/T_DotNetCoords_Ellipsoid_WGS66Ellipsoid.htm" />
   <HelpKINode Title="DotNetCoords.Ellipsoid.WGS72Ellipsoid class" Url="html/T_DotNetCoords_Ellipsoid_WGS72Ellipsoid.htm" />
   <HelpKINode Title="DotNetCoords.Ellipsoid.WGS84Ellipsoid class" Url="html/T_DotNetCoords_Ellipsoid_WGS84Ellipsoid.htm" />
+  <HelpKINode Title="DotNetCoords.FixPhrase class" Url="html/T_DotNetCoords_FixPhrase.htm" />
   <HelpKINode Title="DotNetCoords.IrishRef class" Url="html/T_DotNetCoords_IrishRef.htm" />
   <HelpKINode Title="DotNetCoords.ITMRef class" Url="html/T_DotNetCoords_ITMRef.htm" />
   <HelpKINode Title="DotNetCoords.LatLng class" Url="html/T_DotNetCoords_LatLng.htm" />
@@ -265,6 +266,16 @@
     <HelpKINode Title="properties" Url="html/Properties_T_DotNetCoords_Ellipsoid_Fischer1968Ellipsoid.htm" />
   </HelpKINode>
   <HelpKINode Title="Fischer1968Ellipsoid.Fischer1968Ellipsoid constructor" Url="html/M_DotNetCoords_Ellipsoid_Fischer1968Ellipsoid__ctor.htm" />
+  <HelpKINode Title="FixPhrase class">
+    <HelpKINode Title="FixPhrase Class" Url="html/T_DotNetCoords_FixPhrase.htm" />
+    <HelpKINode Title="about FixPhrase class" Url="html/T_DotNetCoords_FixPhrase.htm" />
+    <HelpKINode Title="constructor" Url="html/Overload_DotNetCoords_FixPhrase__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_DotNetCoords_FixPhrase.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_DotNetCoords_FixPhrase.htm" />
+  </HelpKINode>
+  <HelpKINode Title="FixPhrase.FixPhrase constructor" Url="html/Overload_DotNetCoords_FixPhrase__ctor.htm" />
+  <HelpKINode Title="FixPhrase.ToLatLng method" Url="html/M_DotNetCoords_FixPhrase_ToLatLng.htm" />
+  <HelpKINode Title="FixPhrase.ToString method" Url="html/M_DotNetCoords_FixPhrase_ToString.htm" />
   <HelpKINode Title="Flattening property" Url="html/P_DotNetCoords_Ellipsoid_Ellipsoid_Flattening.htm" />
   <HelpKINode Title="GetUTMLatitudeZoneLetter method" Url="html/M_DotNetCoords_UTMRef_GetUTMLatitudeZoneLetter.htm" />
   <HelpKINode Title="GRS67Ellipsoid class">
@@ -367,8 +378,8 @@
   <HelpKINode Title="IrishRef.ToSixFigureString method" Url="html/M_DotNetCoords_IrishRef_ToSixFigureString.htm" />
   <HelpKINode Title="IrishRef.ToString method" Url="html/M_DotNetCoords_IrishRef_ToString.htm" />
   <HelpKINode Title="IsBessel method" Url="html/M_DotNetCoords_MGRSRef_IsBessel.htm" />
-  <HelpKINode Title="IsValidLatitude method" Url="html/M_DotNetCoords_LatLng_IsValidLatitude.htm" />
-  <HelpKINode Title="IsValidLongitude method" Url="html/M_DotNetCoords_LatLng_IsValidLongitude.htm" />
+  <HelpKINode Title="IsValidLatitude method" Url="html/Overload_DotNetCoords_LatLng_IsValidLatitude.htm" />
+  <HelpKINode Title="IsValidLongitude method" Url="html/Overload_DotNetCoords_LatLng_IsValidLongitude.htm" />
   <HelpKINode Title="ITMRef class">
     <HelpKINode Title="ITMRef Class" Url="html/T_DotNetCoords_ITMRef.htm" />
     <HelpKINode Title="about ITMRef class" Url="html/T_DotNetCoords_ITMRef.htm" />
@@ -405,8 +416,8 @@
   <HelpKINode Title="LatLng.Distance method" Url="html/M_DotNetCoords_LatLng_Distance.htm" />
   <HelpKINode Title="LatLng.DistanceMiles method" Url="html/M_DotNetCoords_LatLng_DistanceMiles.htm" />
   <HelpKINode Title="LatLng.Height property" Url="html/P_DotNetCoords_LatLng_Height.htm" />
-  <HelpKINode Title="LatLng.IsValidLatitude method" Url="html/M_DotNetCoords_LatLng_IsValidLatitude.htm" />
-  <HelpKINode Title="LatLng.IsValidLongitude method" Url="html/M_DotNetCoords_LatLng_IsValidLongitude.htm" />
+  <HelpKINode Title="LatLng.IsValidLatitude method" Url="html/Overload_DotNetCoords_LatLng_IsValidLatitude.htm" />
+  <HelpKINode Title="LatLng.IsValidLongitude method" Url="html/Overload_DotNetCoords_LatLng_IsValidLongitude.htm" />
   <HelpKINode Title="LatLng.Latitude property" Url="html/P_DotNetCoords_LatLng_Latitude.htm" />
   <HelpKINode Title="LatLng.LatitudeDegrees property" Url="html/P_DotNetCoords_LatLng_LatitudeDegrees.htm" />
   <HelpKINode Title="LatLng.LatitudeMinutes property" Url="html/P_DotNetCoords_LatLng_LatitudeMinutes.htm" />
@@ -703,6 +714,7 @@
   <HelpKINode Title="ToLatLng method">
     <HelpKINode Title="CoordinateSystem.ToLatLng Method " Url="html/M_DotNetCoords_CoordinateSystem_ToLatLng.htm" />
     <HelpKINode Title="ECEFRef.ToLatLng Method " Url="html/M_DotNetCoords_ECEFRef_ToLatLng.htm" />
+    <HelpKINode Title="FixPhrase.ToLatLng Method " Url="html/M_DotNetCoords_FixPhrase_ToLatLng.htm" />
     <HelpKINode Title="IrishRef.ToLatLng Method " Url="html/M_DotNetCoords_IrishRef_ToLatLng.htm" />
     <HelpKINode Title="ITMRef.ToLatLng Method " Url="html/M_DotNetCoords_ITMRef_ToLatLng.htm" />
     <HelpKINode Title="MGRSRef.ToLatLng Method " Url="html/M_DotNetCoords_MGRSRef_ToLatLng.htm" />
@@ -720,6 +732,7 @@
     <HelpKINode Title="Datum.ToString Method " Url="html/M_DotNetCoords_Datum_Datum_ToString.htm" />
     <HelpKINode Title="ECEFRef.ToString Method " Url="html/M_DotNetCoords_ECEFRef_ToString.htm" />
     <HelpKINode Title="Ellipsoid.ToString Method " Url="html/M_DotNetCoords_Ellipsoid_Ellipsoid_ToString.htm" />
+    <HelpKINode Title="FixPhrase.ToString Method " Url="html/M_DotNetCoords_FixPhrase_ToString.htm" />
     <HelpKINode Title="IrishRef.ToString Method " Url="html/M_DotNetCoords_IrishRef_ToString.htm" />
     <HelpKINode Title="LatLng.ToString Method " Url="html/M_DotNetCoords_LatLng_ToString.htm" />
     <HelpKINode Title="MGRSRef.ToString Method " Url="html/Overload_DotNetCoords_MGRSRef_ToString.htm" />
@@ -727,8 +740,8 @@
     <HelpKINode Title="UTMRef.ToString Method " Url="html/M_DotNetCoords_UTMRef_ToString.htm" />
   </HelpKINode>
   <HelpKINode Title="ToTenFigureString method" Url="html/M_DotNetCoords_OSRef_ToTenFigureString.htm" />
-  <HelpKINode Title="ToUTMRef method" Url="html/M_DotNetCoords_MGRSRef_ToUTMRef.htm" />
   <HelpKINode Title="ToUtmRef method" Url="html/M_DotNetCoords_LatLng_ToUtmRef.htm" />
+  <HelpKINode Title="ToUTMRef method" Url="html/M_DotNetCoords_MGRSRef_ToUTMRef.htm" />
   <HelpKINode Title="ToWGS84 method" Url="html/M_DotNetCoords_LatLng_ToWGS84.htm" />
   <HelpKINode Title="UTMRef class">
     <HelpKINode Title="UTMRef Class" Url="html/T_DotNetCoords_UTMRef.htm" />
