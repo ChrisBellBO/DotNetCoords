@@ -539,5 +539,17 @@ namespace TestDotNetCoords
       Assert.AreEqual(osRef.Northing, os2.Northing);
       Assert.AreEqual(osRef.Datum.Name, os2.Datum.Name);
     }
+
+    [TestMethod]
+    public void TestFixPhrase()
+    {
+      var ff = new FixPhrase("crimson magma sweep uncured");
+      var ll = ff.ToLatLng();
+      Assert.AreEqual(51.399423, ll.Latitude, 0.0001);
+      Assert.AreEqual(-0.297468, ll.Longitude, 0.0001);
+
+      var ff2 = new FixPhrase(ll);
+      Assert.AreEqual("crimson magma sweep uncured", ff2.ToString());
+    }
   }
 }
