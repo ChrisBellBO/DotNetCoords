@@ -461,7 +461,7 @@ namespace DotNetCoords
     public void ToDatum(Datum.Datum d) 
     {
       // first convert to WGS84 if needed
-      if (!(Datum is WGS84Datum)) 
+      if (Datum is not WGS84Datum)
       {
         InternalToDatum(WGS84Datum.Instance, true);
       } 
